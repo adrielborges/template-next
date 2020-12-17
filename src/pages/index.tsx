@@ -20,31 +20,79 @@ const Home: React.FC = () => {
 
       <div>
         <main>
-          <h1>
+          <h1 style={{ textAlign: 'center' }}>
             Welcome to <a href="https://nextjs.org">Next.js!</a>
           </h1>
 
-          <p>
+          <p style={{ textAlign: 'center' }}>
             Get started by editing <code>pages/index.js</code>
           </p>
 
-          <div>
-            <a href="https://nextjs.org/docs">
+          <div
+            style={{
+              marginTop: '50px',
+              display: 'grid',
+              width: '800px',
+              gridTemplateColumns: '1fr 1fr'
+            }}
+          >
+            <a
+              style={{
+                background: 'gray',
+                borderRadius: '10px',
+                padding: '10px',
+                paddingLeft: '15px',
+                marginRight: '10px',
+                marginBottom: '20px'
+              }}
+              href="https://nextjs.org/docs"
+            >
               <h3>Documentation &rarr;</h3>
               <p>Find in-depth information about Next.js features and API.</p>
             </a>
 
-            <a href="https://nextjs.org/learn">
+            <a
+              style={{
+                background: 'gray',
+                borderRadius: '10px',
+                padding: '10px',
+                paddingLeft: '15px',
+
+                marginLeft: '10px',
+                marginBottom: '20px'
+              }}
+              href="https://nextjs.org/learn"
+            >
               <h3>Learn &rarr;</h3>
               <p>Learn about Next.js in an interactive course with quizzes!</p>
             </a>
 
-            <a href="https://github.com/vercel/next.js/tree/master/examples">
+            <a
+              style={{
+                background: 'gray',
+                borderRadius: '10px',
+                padding: '10px',
+                paddingLeft: '15px',
+                marginRight: '10px',
+                marginBottom: '20px'
+              }}
+              href="https://github.com/vercel/next.js/tree/master/examples"
+            >
               <h3>Examples &rarr;</h3>
               <p>Discover and deploy boilerplate example Next.js projects.</p>
             </a>
 
-            <a href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app">
+            <a
+              style={{
+                background: 'gray',
+                borderRadius: '10px',
+                padding: '10px',
+                paddingLeft: '15px',
+                marginLeft: '10px',
+                marginBottom: '20px'
+              }}
+              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            >
               <h3>Deploy &rarr;</h3>
               <p>
                 Instantly deploy your Next.js site to a public URL with Vercel.
@@ -53,9 +101,8 @@ const Home: React.FC = () => {
           </div>
         </main>
 
-        <footer>
+        <footer style={{ textAlign: 'center', marginTop: '50px' }}>
           <a
-            style={{}}
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -64,8 +111,8 @@ const Home: React.FC = () => {
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
-              width={300}
-              height={'auto'}
+              height={20}
+              width={'auto'}
             />
           </a>
         </footer>
